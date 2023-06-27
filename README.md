@@ -40,24 +40,6 @@
 
 [![N](https://github.com/dwuser78/Test_for_the_first_block/blob/main/Img/diag_part_2.png?raw=true)]()
 ```C#
-    void PrintArray(string[] array)
-    {
-        Console.Write("[");
-    
-        for (int word = 0; word < array.Length; word++)
-        {
-            if (word == array.Length - 1)
-                Console.WriteLine("\"{0}\"]", array[word]);
-            else
-                Console.Write("\"{0}\", ", array[word]);
-        }
-    }
-```
-
-*Печать нового массива:*
-
-[![N](https://github.com/dwuser78/Test_for_the_first_block/blob/main/Img/diag_part_3.png?raw=true)]()
-```C#
     string[] CreateNewArray(string[] oldArray)
     {
         int words = 0;
@@ -81,5 +63,23 @@
         }
     
         return newArray;
+    }
+```
+
+*Печать нового массива:*
+
+[![N](https://github.com/dwuser78/Test_for_the_first_block/blob/main/Img/diag_part_3.png?raw=true)]()
+```C#
+    void PrintArray(string[] array)
+    {
+        Console.Write("[");
+    
+        for (int word = 0; word < array.Length; word++)
+        {
+            if (word == array.Length - 1)
+                Console.WriteLine("\"{0}\"]", array[word]);
+            else
+                Console.Write("\"{0}\", ", array[word]);
+        }
     }
 ```
